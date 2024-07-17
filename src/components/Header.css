@@ -1,0 +1,13 @@
+/* Header.css */
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2rem;
+}
+
+.content p {
+  margin: 5px 0;
+}

@@ -1,0 +1,89 @@
+/* AddTask.css */
+.add-task-container {
+  border: 2.5px solid var(--border-color);
+  border-radius: 10px;
+  margin: 0 10px;
+  padding: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-task-container form {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-task-container .btn {
+  width: 100%;
+  height: 40px;
+  background-color: var(--btn-inp-ico-color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: large;
+  color: var(--todo-container-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-task-container .btn:hover {
+  background-color: #0c7ae2;
+}
+
+.add-task-container .inp1,
+.add-task-container select,
+.add-task-container .date-input {
+  background: none;
+  border: 1px solid var(--border-color);
+  outline: none;
+  color: var(--text-color);
+  width: 100%;
+  padding: 10px;
+  font-size: large;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.dark .add-task-container .inp1,
+.dark .add-task-container select,
+.dark .add-task-container .date-input {
+  color: white;
+}
+
+.dark .add-task-container select {
+  background-color: var(--todo-container-color);
+}
+
+.add-task-container .date-input::-webkit-calendar-picker-indicator {
+  filter: invert(0);
+}
+
+.dark .add-task-container .date-input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.light .add-task-container .date-input::-webkit-calendar-picker-indicator {
+  color: var(--text-color);
+}
+
+.add-task-container .inp1 {
+  max-width: 100%;
+}
+
+.inp1 {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  width: 69%;
+  font-size: large;
+  position: relative;
+  left: 0px;
+  bottom: 2.5px;
+}

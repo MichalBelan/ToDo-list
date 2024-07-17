@@ -1,0 +1,99 @@
+/* TaskList.css */
+.task-list-container {
+  border: 1.75px solid var(--btn-inp-ico-color);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.box {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.checkBox {
+  position: absolute;
+}
+
+.check {
+  width: 25px;
+  height: 30px;
+  color: var(--btn-inp-ico-color);
+  cursor: pointer;
+}
+
+.done {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  width: 85%;
+  font-size: large;
+  position: relative;
+  left: 40px;
+  bottom: 2.5px;
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.inp {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  width: 69%;
+  font-size: large;
+  position: relative;
+  left: 30px;
+  bottom: 2.5px;
+}
+
+.Btns {
+  position: relative;
+  top: 1.75px;
+  display: flex;
+  column-gap: 8px;
+}
+
+.delete {
+  color: var(--btn-inp-ico-color);
+  border: 1.5px solid var(--btn-inp-ico-color);
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  color: red;
+  border: 1.5px solid tomato;
+}
+
+.edit {
+  color: var(--btn-inp-ico-color);
+  border: 1.5px solid var(--btn-inp-ico-color);
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.edit:hover {
+  color: green;
+  border: 1.5px solid chocolate;
+}
+
+@media (max-width: 480px) {
+  .done {
+    font-size: small;
+  }
+
+  .inp {
+    font-size: small;
+  }
+  .delete {
+    color: red;
+    border: 1.5px solid tomato;
+  }
+}

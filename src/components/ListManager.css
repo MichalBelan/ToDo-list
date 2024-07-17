@@ -1,0 +1,44 @@
+/* ListManager.css */
+
+.list-manager {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.list-manager button {
+  background-color: var(--btn-inp-ico-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1rem;
+}
+
+.list-manager button:hover {
+  background-color: #0c7ae2;
+  color: var(--container-color);
+}
+
+.list-manager button:focus {
+  outline: 2px solid var(--border-color);
+}
+
+.dark .list-manager button {
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .list-manager {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list-manager button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

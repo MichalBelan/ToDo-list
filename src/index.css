@@ -1,0 +1,79 @@
+/* index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+:root {
+  --container-color: #fff;
+  --text-color: #000;
+  --todo-container-color: #f0f0f0;
+  --btn-inp-ico-color: #1a73e8;
+  --border-color: #30313d;
+}
+
+.dark {
+  --container-color: #252525;
+  --todo-container-color: #17181f;
+  --btn-inp-ico-color: #61dafb;
+  --border-color: #30313d;
+  --text-color: white;
+}
+
+.light {
+  --container-color: #dee4e7;
+  --todo-container-color: #ccc;
+  --btn-inp-ico-color: #1a73e8;
+  --border-color: #30313d;
+  --text-color: black;
+}
+
+body {
+  background-color: var(--container-color);
+}
+
+.container {
+  min-height: 100vh;
+  background-color: var(--container-color);
+  color: var(--text-color);
+  padding: 3rem 0;
+}
+
+.modes {
+  position: fixed;
+  left: 95%;
+  bottom: 90%;
+  border: 2px solid var(--text-color);
+  height: 30px;
+  width: 30px;
+  display: grid;
+  border-radius: 50%;
+  place-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .modes {
+    left: 90vw;
+    bottom: 85vh;
+  }
+}
+
+.todo-container {
+  background-color: var(--todo-container-color);
+  margin: 0 auto;
+  max-width: 900px;
+  min-height: 80vh;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+@media (max-width: 480px) {
+  .todo-container {
+    max-width: 500px;
+    min-height: 50vh;
+  }
+}
