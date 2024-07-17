@@ -29,7 +29,7 @@ Táto aplikácia umožňuje používateľom vytvárať, upravovať a spravovať 
 1. Klonujte repozitár:
 
    ```bash
-   git clone https://github.com/vasouzivatel/task-management-app.git
+   git clone https://github.com/MichalBelan/ToDo-list.git
    cd todo-list
    
 2. Nainštalujte závislosti:
